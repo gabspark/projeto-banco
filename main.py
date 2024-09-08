@@ -25,9 +25,8 @@ def main():
                 valor = float(valor_usuario.replace(",", ".")) if "," in valor_usuario else float(valor_usuario)
                 if valor > 0:
                     conta.saque(valor)
-                    print(f"Saque de R${valor:.2f} autorizado.")
                 else:
-                    print("Valor inválido. Por favor, digite um valor acima de R$ 0.00")
+                    print("Valor inválido. Por favor, insira um valor acima de R$ 0.00")
 
             case "4":
                 break
